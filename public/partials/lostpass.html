@@ -1,0 +1,59 @@
+<div ng-app="in2nData" ng-controller="Loginctrl" layout-align="center
+none" layout="column" >
+   <div layout="row" layout-align="center none">
+ 
+   <md-card>
+  <md-content class="md-no-momentum">
+        <md-content class="md-no-momentum">
+       <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2><span>
+<md-icon aria-label="copyright" class="material-icons">copyright</md-icon>
+in2ndata Lost Password mailer</span></h2>
+          </div>
+        </md-toolbar>
+
+
+    <form name="lostPass">
+
+            <md-input-container class="md-block">
+<md-icon  class="material-icons">account_circle</md-icon>
+              <label>Username</label>
+              <input type="text" name="user.name"
+ng-model="user.name" placeholder="username" />
+            </md-input-container>
+
+
+      <md-input-container class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Company Name</label>
+      <md-icon class="type">business</md-icon>
+        <md-select ng-model="user.companyname">
+                  <md-option ng-value="company" ng-repeat="company in
+companylist ">{{company}}</md-option>
+           </md-select>
+      </md-input-container>
+
+     <md-input-container class="md-block">
+	<label>Security question</label>
+        <md-select ng-model="user.security_question">
+          <md-option ng-repeat="q in secq" value="{{q}}">{{q}}</md-option>
+        </md-select>
+      </md-input-container>
+
+    <md-input-container style="margin-right: 10px;">
+      <label>Answer</label>
+      <md-icon class="name">event_note</md-icon>
+      <input ng-model="user.answer" type="text"
+placeholder="security answer">
+    </md-input-container>
+
+         
+   <md-button  ng-click="sendPassReset(user);" 
+	ng-class="{'md-raised md-primary': (lostPass.$dirty && lostPass.$valid) }">Send password reset link</md-button>
+   </form>
+  </md-content>
+ </md-card>
+
+</div>
+</div>
