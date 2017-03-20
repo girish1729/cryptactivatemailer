@@ -4,6 +4,8 @@ Activate mailer service with encrypted link
 with Angular.js factory and nvd3 rendering using JSON
  from a HTTP express server fetching samples from postgres DB.
 
+![s](https://cloud.githubusercontent.com/assets/6890469/23995134/3f4ee6e8-0a6e-11e7-801c-e7f267e18a6d.jpg)
+
 Overview
 ========
 
@@ -19,7 +21,6 @@ from a database.
 Screenshots
 ===========
 
-![s](https://cloud.githubusercontent.com/assets/6890469/23995134/3f4ee6e8-0a6e-11e7-801c-e7f267e18a6d.jpg)
 ![shot](https://cloud.githubusercontent.com/assets/6890469/24108248/1774fe8a-0db3-11e7-8751-433f3dcb683f.png)
 
 Usage
