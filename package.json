@@ -1,0 +1,25 @@
+{
+  "name": "cryptactivatemailer",
+  "version": "1.0.0",
+  "description": "Angular Mail activation service for user creation",
+  "main": "f.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=express:* node activateserver.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/girish1729/cryptactivatemailer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/girish1729/cryptactivatemailer/issues"
+  },
+  "homepage": "https://github.com/girish1729/cryptactivatemailer#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "emailjs" : "*"
+  }
+}

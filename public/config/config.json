@@ -1,0 +1,5 @@
+{
+ "mail_user": "foouser@gmail.com",
+ "mail_password": "foopass",
+ "mail_host": "smtp.gmail.com"
+}

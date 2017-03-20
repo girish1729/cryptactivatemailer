@@ -15,31 +15,27 @@ from a database.
  material design principles.
 
 
-Populate DB
-===========
-
-
-Here is how you populate it.
-```
-psql -U postgres
-psql> create database d3samples;
-psql> \c d3samples;
-psql> create table d3samples(id serial,feed_id integer, ts timestamp,val
-double precision);
-psql> insert into d3samples values(DEFAULT, 20, 'now()', 23432.343);
-psql> insert into d3samples values(DEFAULT, 20, 'now()', 32.0343);
-psql> insert into d3samples values(DEFAULT, 20, 'now()', 132.0343);
-psql> insert into d3samples values(DEFAULT, 20, 'now()', 82.038);
-psql> insert into d3samples values(DEFAULT, 20, 'now()', 92.033);
-...
-psql>quit
-```
 
 Screenshots
 ===========
 
 ![s](https://cloud.githubusercontent.com/assets/6890469/23995134/3f4ee6e8-0a6e-11e7-801c-e7f267e18a6d.jpg)
+![shot](https://cloud.githubusercontent.com/assets/6890469/24108248/1774fe8a-0db3-11e7-8751-433f3dcb683f.png)
 
+Usage
+========
+
+```
+
+$ npm install
+$ cd public
+$ bower install
+$ cd ..
+$ npm start
+
+```
+
+Go to [http://localhost;2333](http://localhost:2333/)
 
 Contact
 =======

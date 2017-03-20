@@ -1,0 +1,46 @@
+<div ng-app="Activateuser"  layout="column" layout-padding ng-cloak>
+
+   <md-card>
+  <md-content class="md-no-momentum">
+       <md-toolbar>
+          <div class="md-toolbar-tools">
+            <h2><span>
+Add user Form</span></h2>
+          </div>
+        </md-toolbar>
+
+    <form name="addUser">
+
+    <md-input-container class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>UserName</label>
+      <md-icon class="name">account_box</md-icon>
+    <input placeholder="username" type="text" name="login" ng-model="user.username" ng-minlength="5"
+           ng-maxlength="20"  required /> 
+       </md-input-container>
+
+
+    <md-input-container class="md-icon-float md-block">
+      <label>Full Name</label>
+      <md-icon class="name">comment</md-icon>
+      <input ng-model="user.fullname" type="text" placeholder="full name">
+    </md-input-container>
+
+    <md-input-container class="md-icon-float md-block">
+      <!-- Use floating label instead of placeholder -->
+      <label>Email</label>
+      <md-icon class="name">email</md-icon>
+      <input ng-model="user.email" type="email" placeholder="email">
+    </md-input-container>
+
+           
+   <md-button  ng-click="userAdd(user);" 
+	ng-class="{'md-raised md-primary':
+	(user.username !== '' && addUser.$dirty && addUser.$valid) }">Add user
+  </md-button>
+
+   </form>
+  </md-content>
+ </md-card>
+
+</div>
